@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.container {
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media only screen and (max-width: 620px) {
+  .container {
+    /* For mobile phones: */
+  }
+  .container .description {
+    margin: 2px 10px;
+  }
+}
+.container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.container .header .header_logo {
+  width: 280px;
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+.container .header .header_btn {
+  text-decoration: none;
+  color: #A5EBE4;
+  font-size: 25px;
+  border: 3px solid #A5EBE4;
+  padding: 15px 60px;
+  border-radius: 15px;
+  letter-spacing: 5px;
+  margin-bottom: 110px;
+}
+.container .header .header_proxi {
+  width: 50px;
+}
+.container .description {
+  color: #A5EBE4;
+  text-align: center;
+  font-size: 22px;
+}
+.container footer {
+  color: #A5EBE4;
+  text-align: center;
+  padding: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */

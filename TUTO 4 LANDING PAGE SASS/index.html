@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <section class="header">
+            <img class="header_logo" src="img/logo_white.png" alt="logo_white">
+            <a class="header_btn" href="index.html">WELCOME</a>
+            <a href="#description" class="link">
+                <img class="header_proxi" src="img/proximo-vene.png" alt="proximo-vene">
+            </a>
+        </section>
+
+        <section class="description" id="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br><br>
+            Error soluta iusto aspernatur consequatur molestiae fugiat, facilis excepturi cumque adipisci porro. <br><br>
+            odio ipsa nam molestias quod nihil ab ullam, nobis beatae! <br> <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br><br>
+            Error soluta iusto aspernatur consequatur molestiae fugiat, facilis excepturi cumque adipisci porro. <br><br>
+            odio ipsa nam molestias quod nihil ab ullam, nobis beatae! <br> <br>
+        </section>
+
+        <footer>
+            Pie de pagina
+        </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        
+        $(function(){
+            $(".link").click(function(){
+                var marca = $(this.hash);
+
+                $("html, body").animate({
+                    scrollTop:marca.offset().top
+                }, 1500);
+            });
+        });
+    
+    </script>
+
+
+</body>
+</html>

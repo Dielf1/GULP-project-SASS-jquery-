@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="header">
+            <img class="header_logo" src="img/logo_white.png" alt="">
+            <a class="header_btn" href="#">Welcome</a>
+            <a href="#description" class="link">
+                <img class="header_proxi" src="img/proximo-vene.png" alt="">
+
+
+            </a>
+        </section>
+
+        <section class="description" id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore laborum
+            adipisci dolorum doloribus vel totam in id, eos beatae quod asperiores nobis numquam amet ullam rem, rerum
+            quae! Non, inventore.</section>
+        <footer>
+            Landing page - HTML | SASS | GULP | JS
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+        $(function(){
+            $(".link").click(function(){
+                var marca = $(this.hash);
+
+                $("html, body").animate({
+                    scrollTop:marca.offset().top
+                }, 1500);
+            });
+        });
+    
+    </script>
+
+</body>
+
+</html>
